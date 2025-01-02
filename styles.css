@@ -5,9 +5,9 @@
 
 body {
     font-family: Roboto, sans-serif;
-    display: flex;
-    flex-flow: column wrap;
 }
+
+/* Header & Footer sections */
 
 .header,
 .footer {
@@ -37,17 +37,18 @@ body {
 .header-links {
     display: flex;
     gap: 12px;
-    font-size: 18px;
     list-style: none;
+
 }
 
 a {
+    font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
 }
 
+/* Main content divisions */
 .content-main {
-    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
 }
@@ -61,6 +62,16 @@ a {
     display: flex;
 }
 
+.content-two,
+.content-three{
+    flex-flow: column wrap;
+}
+
+button {
+    background-color: #3882f6;
+}
+
+/* Individual content divisions */
 .content-one{
     background-color: #1f2937;
 }
@@ -70,8 +81,19 @@ a {
     font-weight: 900;
     color: #f9faf8;
 }
+
+.hero-secondary{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.info-header{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
 .content-three{
-    flex-flow: column wrap;
     background-color: #e5e7eb;
 }
 
@@ -88,3 +110,4 @@ a {
     color: #1f2937;
     text-align: end;
 }
+
